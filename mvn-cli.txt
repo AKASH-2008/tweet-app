@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=com.cts_techacademy.demo -DartifactId=twitter-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
