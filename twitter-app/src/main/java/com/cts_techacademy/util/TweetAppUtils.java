@@ -7,7 +7,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.cts_techacademy.exception.MasterException;
-import com.cts_techacademy.service.TweetAppService;
 import com.cts_techacademy.view.ViewGenerator;
 
 public class TweetAppUtils {

@@ -1,9 +1,8 @@
 package com.cts_techacademy.controller;
 
 import com.cts_techacademy.exception.MasterException;
-import com.cts_techacademy.service.LoginService;
-import com.cts_techacademy.service.LogoutService;
-import com.cts_techacademy.service.TweetAppService;
+import com.cts_techacademy.service.LogoutServiceImpl;
+import com.cts_techacademy.service.TweetAppServiceImpl;
 import com.cts_techacademy.util.TweetAppUtils;
 import com.cts_techacademy.view.ViewGenerator;
 
@@ -17,9 +16,9 @@ public class TweetAppController {
     public static void tweetAppPromt(String username) throws MasterException {
 
         String str = TweetAppUtils.reader("Choice");
-        LogoutService logoutService = new LogoutService();
-        logoutService.exitApplication(str);
-        TweetAppService service = new TweetAppService();
+        LogoutServiceImpl logoutServiceImpl = new LogoutServiceImpl();
+        logoutServiceImpl.exitApplication(str);
+        TweetAppServiceImpl service = new TweetAppServiceImpl();
         try {
             service.choice(str, username);
         } catch (MasterException e) {
